@@ -1,3 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Projeto de Grupo | GitHub</title>
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: Arial, sans-serif;
+			scroll-behavior: smooth;
+		}
+
+		body {
+			background: #f4f6fa;
+			color: #222;
+		}
+
+		header {
+			background: #172554;
+			color: white;
+			padding: 20px 8%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 15px;
+		}
+
+		header h2 {
+			font-size: 24px;
+		}
+
+		nav a {
+			color: white;
+			text-decoration: none;
+			margin-left: 20px;
+			font-size: 14px;
+		}
+
+		nav a:hover {
+			color: #60a5fa;
+		}
+
+		.hero {
+			background: linear-gradient(135deg, #172554, #2563eb);
+			color: white;
+			text-align: center;
+			padding: 100px 20px;
+		}
+
+		.hero h1 {
+			font-size: 42px;
+			margin-bottom: 20px;
+		}
+
+		.hero p {
+			font-size: 18px;
+			margin-bottom: 30px;
+		}
+
+		.botao {
+			display: inline-block;
+			background: white;
+			color: #172554;
+			padding: 13px 25px;
+			border-radius: 8px;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		section {
+			padding: 65px 8%;
+			text-align: center;
+		}
+
+		section h2 {
+			font-size: 30px;
+			margin-bottom: 20px;
+			color: #172554;
+		}
+
+		.descricao {
+			max-width: 750px;
+			margin: auto;
+			line-height: 1.8;
+			color: #555;
+		}
+
+		.equipa {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 25px;
+			margin-top: 35px;
+		}
+
+		.membro {
+			background: white;
+			width: 280px;
+			padding: 30px 20px;
+			border-radius: 12px;
+			box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+		}
+
+		.avatar {
+			background: #dbeafe;
+			color: #1d4ed8;
+			width: 75px;
+			height: 75px;
+			border-radius: 50%;
+			margin: 0 auto 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 30px;
+			font-weight: bold;
+		}
+
+		.membro h3 {
+			margin-bottom: 10px;
+			color: #172554;
+		}
+
+		.membro p {
+			color: #666;
+			line-height: 1.6;
+		}
+
+		.tecnologias {
+			background: #e8eefb;
+		}
+
+		.lista {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 15px;
+			margin-top: 30px;
+		}
+
+		.tecnologia {
+			background: #172554;
+			color: white;
+			padding: 15px 25px;
+			border-radius: 8px;
+			font-weight: bold;
+		}
+
+		footer {
+			background: #172554;
+			color: white;
+			text-align: center;
+			padding: 25px;
+		}
+
+		@media (max-width: 600px) {
+			header {
+				justify-content: center;
+			}
+
+			nav {
+				text-align: center;
+			}
+
+			nav a {
+				margin: 5px;
+				display: inline-block;
+			}
+
+			.hero h1 {
+				font-size: 30px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+	<header>
+		<h2>🚀 Projeto Grupo</h2>
+
+		<nav>
+			<a href="#inicio">Início</a>
+			<a href="#projeto">Projeto</a>
+			<a href="#equipa">Equipa</a>
+			<a href="#tecnologias">Tecnologias</a>
+		</nav>
+	</header>
+
+	<div class="hero" id="inicio">
+		<h1>Bem-vindos ao nosso projeto!</h1>
+
+		<p>
+			Um projeto desenvolvido por uma equipa de três elementos,
+			com colaboração, criatividade e tecnologia.
+		</p>
+
+		<a href="#projeto" class="botao">Conhecer o projeto</a>
+	</div>
+
+	<section id="projeto">
+		<h2>Sobre o Projeto</h2>
+
+		<p class="descricao">
+			Este projeto foi desenvolvido no âmbito de um trabalho
+			de grupo. O objetivo é colocar em prática os conhecimentos
+			adquiridos na área da informática, através da colaboração
+			entre três elementos e da utilização de ferramentas
+			de desenvolvimento e controlo de versões.
+		</p>
+	</section>
+
+	<section id="equipa">
+		<h2>A Nossa Equipa</h2>
+
+		<p class="descricao">
+			Somos três elementos a trabalhar em conjunto
+			para desenvolver este projeto.
+		</p>
+
+		<div class="equipa">
+
+			<div class="membro">
+				<div class="avatar">01</div>
+				<h3>Elemento 1</h3>
+				<p>Nome: Inserir nome</p>
+				<p>Função: Desenvolvimento HTML</p>
+			</div>
+
+			<div class="membro">
+				<div class="avatar">02</div>
+				<h3>Elemento 2</h3>
+				<p>Nome: Inserir nome</p>
+				<p>Função: Design e CSS</p>
+			</div>
+
+			<div class="membro">
+				<div class="avatar">03</div>
+				<h3>Elemento 3</h3>
+				<p>Nome: Inserir nome</p>
+				<p>Função: Testes e GitHub</p>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="tecnologias" id="tecnologias">
+		<h2>Tecnologias Utilizadas</h2>
+
+		<p class="descricao">
+			Estas são algumas das tecnologias e ferramentas
+			utilizadas no desenvolvimento do nosso trabalho.
+		</p>
+
+		<div class="lista">
+			<div class="tecnologia">HTML5</div>
+			<div class="tecnologia">CSS3</div>
+			<div class="tecnologia">JavaScript</div>
+			<div class="tecnologia">GitHub</div>
+		</div>
+	</section>
+
+	<footer>
+		<p>Projeto desenvolvido por uma equipa de 3 elementos.</p>
+		<p>© 2026 - Projeto de Grupo</p>
+	</footer>
+
+</body>
+</html>
 <html>
 
 </html>
