@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equipa - Turma SJM</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="site-header">
         <h1>Nossa Equipa</h1>
         <nav>
             <a href="index.html">Início</a> | 
@@ -15,21 +16,43 @@
         </nav>
     </header>
 
-    <main>
-        <section>
+    <main class="container">
+        <section class="intro">
             <h2>Elementos do Grupo</h2>
-            <p>Conhece os elementos responsáveis pelo desenvolvimento deste projeto escolar.</p>
-            
-            <ul>
-                <li><strong>Aluno 1:</strong> Responsável pelo repositório principal e GitHub Pages.</li>
-                <li><strong>Aluno 2 (Enzo):</strong> Responsável pelos ficheiros de projetos e equipa.</li>
-                <li><strong>Aluno 3:</strong> Responsável pelos contactos e disciplinas.</li>
-            </ul>
+            <p>Conhece os responsáveis pelo desenvolvimento deste projeto escolar no âmbito da turma SJM.</p>
+        </section>
+
+        <section class="membros-grid">
+            <div class="membro-card">
+                <h3>Aluno 1</h3>
+                <p><strong>Responsabilidade:</strong> Repositório principal, index.html e GitHub Pages.</p>
+                <p><strong>Ferramentas:</strong> Git, GitHub Pages, HTML</p>
+                <span class="badge">Repo Owner</span>
+            </div>
+
+            <div class="membro-card destaque">
+                <h3>Aluno 2 (Enzo)</h3>
+                <p><strong>Responsabilidade:</strong> Gestão de projetos.html, equipa.html e controlo de versões.</p>
+                <p><strong>Ferramentas:</strong> VS Code, Git CLI, HTML5, CSS</p>
+                <span class="badge">Desenvolvedor Git</span>
+            </div>
+
+            <div class="membro-card">
+                <h3>Aluno 3</h3>
+                <p><strong>Responsabilidade:</strong> Gestão de contactos e disciplinas.</p>
+                <p><strong>Ferramentas:</strong> Markdown, HTML, Documentação</p>
+                <span class="badge">Colaborador</span>
+            </div>
+        </section>
+
+        <section class="contacto-equipa">
+            <h2>Contacto da Equipa</h2>
+            <p>Caso tenhas alguma dúvida sobre o repositório, entra em contacto com os colaboradores através da plataforma do GitHub.</p>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 - Turma SJM</p>
+    <footer class="site-footer">
+        <p>&copy; 2026 - Turma SJM | Desenvolvido por Enzo (Aluno 2)</p>
     </footer>
 </body>
 </html>
